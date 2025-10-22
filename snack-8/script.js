@@ -29,6 +29,16 @@ for (let i = 0; i < students.length; i++) {
 }
 console.log(classe);
 
+const room = []
+students.forEach(element => {
+  if (element.name === 'Marco Lanci') {
+    room.push(element.class)
+  }
+})
+console.log(room);
+
+
+
 const clas = students.map(element => {
   if (element.name === 'Marco Lanci') {
     return element.class
