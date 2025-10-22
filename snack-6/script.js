@@ -11,7 +11,7 @@ const zucchine = [
   { type: 'Calabrese', weight: 14, length: 4 },
 ];
 
-let zucchineLunghe = []
+const zucchineLunghe = []
 for (let i = 0; i < zucchine.length; i++) {
   const element = zucchine[i];
   if (element.length >= 15) {
@@ -20,7 +20,16 @@ for (let i = 0; i < zucchine.length; i++) {
 }
 console.log(zucchineLunghe);
 
-let altreZucchine = []
+const zuccinaEach = []
+zucchine.forEach(element => {
+  if (element.length >= 15) {
+    zuccinaEach.push(element)
+  }
+})
+console.log(zuccinaEach);
+
+
+const altreZucchine = []
 for (let i = 0; i < zucchine.length; i++) {
   const element = zucchine[i];
   if (element.length < 15) {
@@ -28,6 +37,14 @@ for (let i = 0; i < zucchine.length; i++) {
   }
 }
 console.log(altreZucchine);
+
+const zuccinaEachAnother = []
+zucchine.forEach(element => {
+  if (element.length < 15) {
+    zuccinaEachAnother.push(element)
+  }
+})
+console.log(zuccinaEachAnother);
 
 const zucchineLenght = zucchine.filter(element => element.length >= 15)
 console.log(zucchineLenght);
