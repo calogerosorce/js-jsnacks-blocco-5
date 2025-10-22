@@ -8,6 +8,14 @@ for (let i = 0; i < numbers.length; i++) {
 
 console.log(addNum);
 
+numAdd = []
+numbers.forEach(element => {
+    ++element
+    numAdd.push(element)
+})
+console.log(numAdd);
+
+
 const addOneNum = numbers.map(element => ++element)
 console.log(addOneNum);
 
