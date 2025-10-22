@@ -9,6 +9,15 @@ for (let i = 0; i < nums.length; i++) {
 }
 console.log(even);
 
+const evens = []
+nums.forEach(element => {
+    if (element % 2 === 0) {
+        evens.push(element)
+    }
+})
+console.log(evens);
+
+
 const pari = nums.filter(element => element % 2 === 0)
 console.log(pari);
 
