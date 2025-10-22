@@ -4,5 +4,11 @@ const people = [
   { name: 'Marco', age: 67 }
 ];
 
+for (let i = 0; i < people.length; i++) {
+  const element = people[i];
+  console.log(element.name)
+}
+
+
 // Stampa in console tutti i nomi
 // Risultato: 'Paolo', 'Giulia', 'Marco'
