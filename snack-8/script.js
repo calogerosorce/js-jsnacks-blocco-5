@@ -19,5 +19,23 @@ const students = [
   },
 ];
 
+const classe = []
+for (let i = 0; i < students.length; i++) {
+  const element = students[i];
+  if (element.name === 'Marco Lanci') {
+    classe.push(element.class)
+
+  }
+}
+console.log(classe);
+
+const clas = students.map(element => {
+  if (element.name === 'Marco Lanci') {
+    return element.class
+  }
+})
+console.log(clas);
+
+
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
