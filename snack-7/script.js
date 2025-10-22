@@ -19,7 +19,7 @@ const students = [
   },
 ];
 
-let studente = []
+const studente = []
 for (let i = 0; i < students.length; i++) {
   const element = students[i];
   if (element.id === 2) {
@@ -27,6 +27,16 @@ for (let i = 0; i < students.length; i++) {
   }
 }
 console.log(studente);
+
+const alunni = []
+students.forEach(element => {
+  if (element.id === 2) {
+    alunni.push(element)
+  }
+})
+console.log(alunni);
+
+
 
 const student = students.find(element => element.id === 2)
 console.log(student);
