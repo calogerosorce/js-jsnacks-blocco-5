@@ -13,6 +13,14 @@ for (let i = 0; i < posts.length; i++) {
 }
 console.log(authors);
 
+authorsEach = []
+posts.forEach(element => {
+  authorsEach.push(element.author)
+})
+console.log(authorsEach);
+
+
+
 const allAuthors = posts.map((element) => element.author)
 console.log(allAuthors);
 
